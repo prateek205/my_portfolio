@@ -54,7 +54,6 @@ const Navbar = () => {
       <div className="navbar-container container">
         {/* Logo */}
         <div className="navbar-logo" onClick={() => scrollToSection('home')}>
-          <div className="logo-icon">⚛️</div>
           <div className="logo-text">
             <span className="logo-name">Prateek</span>
             <span className="logo-title">MERN Developer</span>

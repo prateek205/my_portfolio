@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 
-const words = ['MERN Developer', 'React Specialist', 'Problem Solver', 'Web Craftsman'];
+const words = ['MERN Developer', 'React Developer', 'Problem Solver', 'Web Craftsman'];
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
@@ -88,10 +88,6 @@ const Hero = () => {
             </div>
             
             <div className="hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">2+</div>
-                <div className="stat-label">Years Experience</div>
-              </div>
               <div className="stat-item">
                 <div className="stat-number">15+</div>
                 <div className="stat-label">Projects</div>
