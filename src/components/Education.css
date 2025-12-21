@@ -1,0 +1,694 @@
+/* components/Education/Education.css */
+.education {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.edu-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.1;
+}
+
+.orb-1 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary-color);
+  top: -150px;
+  right: -100px;
+  animation: float 8s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 200px;
+  height: 200px;
+  background: var(--secondary-color);
+  bottom: -100px;
+  left: -50px;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+.knowledge-tree {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 300px;
+  opacity: 0.05;
+}
+
+.tree-trunk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 200px;
+  background: linear-gradient(to bottom, #8b5cf6, #06b6d4);
+  border-radius: var(--radius-full);
+}
+
+.tree-branch {
+  position: absolute;
+  background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+  border-radius: var(--radius-full);
+}
+
+.branch-1 {
+  top: 40%;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  transform: translateX(-100%);
+}
+
+.branch-2 {
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  transform: translateX(0);
+}
+
+.branch-3 {
+  top: 60%;
+  left: 50%;
+  width: 120px;
+  height: 4px;
+  transform: translateX(-100%);
+}
+
+.tree-leaf {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.leaf-1 {
+  top: 35%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.leaf-2 {
+  top: 55%;
+  left: 80%;
+  animation-delay: 1s;
+}
+
+.leaf-3 {
+  top: 70%;
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.title-knowledge {
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--gray-color);
+  font-size: 1.25rem;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.education-timeline {
+  position: relative;
+}
+
+.timeline-years {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  position: sticky;
+  top: 100px;
+}
+
+.year-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  transition: all var(--transition-normal);
+}
+
+.year-btn:hover {
+  transform: scale(1.1);
+}
+
+.year-btn.active .year-label {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.year-btn.active .year-dot {
+  background: var(--primary-color);
+  transform: scale(1.2);
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2);
+}
+
+.year-label {
+  color: var(--gray-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: all var(--transition-normal);
+}
+
+.year-dot {
+  width: 16px;
+  height: 16px;
+  background: #cbd5e1;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all var(--transition-normal);
+}
+
+.timeline-path {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  z-index: 1;
+}
+
+.path-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, 
+    transparent, 
+    #e2e8f0, 
+    transparent
+  );
+}
+
+.path-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, 
+    var(--primary-color), 
+    var(--secondary-color)
+  );
+  border-radius: var(--radius-full);
+  animation: flowDown 3s ease infinite;
+}
+
+@keyframes flowDown {
+  0%, 100% { height: 0; }
+  50% { height: 100%; }
+}
+
+.education-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 3rem;
+  box-shadow: var(--shadow-2xl);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.degree-icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.icon-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+.icon-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.3;
+  animation: pulse 2s infinite;
+}
+
+.degree-info {
+  flex: 1;
+}
+
+.degree-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.degree-year {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.degree-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.degree-status.completed {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.degree-title {
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.degree-field {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.institution-info {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: var(--radius-lg);
+}
+
+.institution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.institution-title {
+  font-size: 1.25rem;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.institution-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-color);
+  font-size: 0.875rem;
+}
+
+.location-icon {
+  font-size: 1rem;
+}
+
+.duration-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-color);
+  font-size: 0.875rem;
+}
+
+.duration-icon {
+  font-size: 1rem;
+}
+
+.achievements-section {
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.achievements-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid #e2e8f0;
+  transition: all var(--transition-normal);
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 0.8s ease forwards;
+  animation-delay: calc(var(--achievement-index) * 0.2s);
+}
+
+.achievement-item:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.achievement-check {
+  width: 24px;
+  height: 24px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-text {
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.achievement-progress {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: var(--radius-full);
+  animation: progressFill 1.5s ease forwards;
+  animation-delay: calc(var(--achievement-index) * 0.2s + 0.5s);
+}
+
+@keyframes progressFill {
+  to { width: 100%; }
+}
+
+.skills-developed {
+  margin-bottom: 2rem;
+}
+
+.skills-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-bubble {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  opacity: 0;
+  transform: scale(0);
+  animation: bubblePop 0.5s ease forwards;
+  animation-delay: calc(var(--bubble-index) * 0.1s);
+}
+
+@keyframes bubblePop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bubble-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-full);
+  opacity: 0;
+  animation: ringPulse 2s ease infinite;
+  animation-delay: calc(var(--bubble-index) * 0.1s + 0.5s);
+}
+
+.education-transition {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(6, 182, 212, 0.1));
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.transition-icon {
+  font-size: 2rem;
+  animation: spin 4s linear infinite;
+}
+
+.transition-text h5 {
+  font-size: 1.125rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.transition-text p {
+  color: var(--gray-color);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.certification-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.certification-title {
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.certification-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #e2e8f0;
+}
+
+.cert-badge {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-icon {
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+.cert-info {
+  flex: 1;
+}
+
+.cert-name {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.cert-issuer {
+  color: var(--gray-color);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.cert-skills {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cert-skill {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.cert-verification {
+  flex-shrink: 0;
+}
+
+.verification-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .education-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .timeline-years {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-path {
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .path-line,
+  .path-progress {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, 
+      transparent, 
+      #e2e8f0, 
+      transparent
+    );
+  }
+  
+  .path-progress {
+    background: linear-gradient(to right, 
+      var(--primary-color), 
+      var(--secondary-color)
+    );
+  }
+  
+  @keyframes flowDown {
+    0%, 100% { width: 0; }
+    50% { width: 100%; }
+  }
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .institution-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .certification-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .education-transition {
+    flex-direction: column;
+    text-align: center;
+  }
+}

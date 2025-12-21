@@ -1,0 +1,231 @@
+/* components/Navbar/Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1.5rem 0;
+  transition: all var(--transition-normal);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.navbar.scrolled {
+  padding: 1rem 0;
+  box-shadow: var(--shadow-lg);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform var(--transition-normal);
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-title {
+  font-size: 0.75rem;
+  color: var(--gray-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  color: var(--gray-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  min-width: 70px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  transition: transform var(--transition-normal);
+}
+
+.nav-link:hover .nav-icon {
+  transform: scale(1.2);
+}
+
+.nav-link.active .nav-icon {
+  animation: pulse 2s infinite;
+}
+
+.nav-indicator {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  animation: pulse 2s infinite;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 24px;
+  height: 18px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--dark-color);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  padding: 6rem 2rem 2rem;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  color: var(--dark-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateX(10px);
+}
+
+.mobile-nav-link.active {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.mobile-nav-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .navbar-logo .logo-title {
+    display: none;
+  }
+}

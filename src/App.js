@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/global.css";
+import "./styles/animation.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="portfolio-app">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+
+      <div className="particles-container">
+        {[...Array(20)].map((_, i) => (
+          <div key={i} className="particle"></div>
+        ))}
+      </div>
+
+      <div className="floating-elements">
+        <div className="floating-element element-1">⚛️</div>
+        <div className="floating-element element-2">🚀</div>
+        <div className="floating-element element-3">💻</div>
+        <div className="floating-element element-4">🎨</div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
