@@ -1,9 +1,7 @@
 // components/Experience/Experience.js
-import React, { useState } from 'react';
 import './Experience.css';
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState('internship');
   
   const experiences = {
     internship: {

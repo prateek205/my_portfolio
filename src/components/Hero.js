@@ -2,13 +2,14 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 
+const words = ['MERN Developer', 'React Specialist', 'Problem Solver', 'Web Craftsman'];
+
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  const words = ['MERN Developer', 'React Specialist', 'Problem Solver', 'Web Craftsman'];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -21,7 +22,6 @@ const Hero = () => {
   useEffect(() => {
     const handleTyping = () => {
       const currentWord = words[currentWordIndex];
-      const shouldDelete = isDeleting ? 1 : -1;
       const typeSpeed = isDeleting ? 50 : 100;
       const deleteSpeed = 50;
       const pauseSpeed = 2000;
@@ -46,7 +46,7 @@ const Hero = () => {
 
     const timer = handleTyping();
     return () => clearTimeout(timer);
-  }, [typedText, isDeleting, currentWordIndex, words]);
+  }, [typedText, isDeleting, currentWordIndex]);
 
   return (
     <section id="home" className="hero section">
