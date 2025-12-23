@@ -15,12 +15,6 @@ const Education = () => {
       location: 'Raigad, Maharashtra',
       duration: 'August 2020 – June 2023',
       status: 'Completed',
-      achievements: [
-        'Successfully completed degree with strong engineering fundamentals',
-        'Developed analytical and problem-solving skills',
-        'Applied logical thinking to technical challenges',
-        'Participated in technical workshops and projects'
-      ],
       skills: ['Problem Solving', 'Analytical Thinking', 'Technical Analysis', 'Project Management']
     }
   };
@@ -101,29 +95,6 @@ const Education = () => {
               <div className="duration-display">
                 <span className="duration-icon">📅</span>
                 <span className="duration-text">{educationData[activeYear].duration}</span>
-              </div>
-            </div>
-            
-            <div className="achievements-section">
-              <h4 className="section-heading">Key Achievements</h4>
-              <div className="achievements-grid">
-                {educationData[activeYear].achievements.map((achievement, index) => (
-                  <div 
-                    key={index} 
-                    className="achievement-item"
-                    style={{ '--achievement-index': index }}
-                  >
-                    <div className="achievement-check">✓</div>
-                    <div className="achievement-content">
-                      <div className="achievement-text">{achievement}</div>
-                      <div className="achievement-progress">
-                        <div className="progress-bar">
-                          <div className="progress-fill"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
             

@@ -25,11 +25,6 @@ const Projects = () => {
       technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Vercel'],
       github: 'https://github.com/prateek205/portfolio',
       demo: 'https://prateek-portfolio.vercel.app',
-      stats: {
-        lines: 2500,
-        commits: 45,
-        stars: 12
-      }
     },
     {
       id: 2,
@@ -47,13 +42,8 @@ const Projects = () => {
         'JSON server'
       ],
       technologies: ['React', 'Context API', 'JavaScript', 'CSS3', 'Vercel'],
-      github: 'https://github.com/prateek205/product-filter',
-      demo: 'https://product-filter-app.vercel.app',
-      stats: {
-        lines: 1800,
-        commits: 32,
-        stars: 8
-      }
+      github: 'https://github.com/prateek205/Product_filter-App',
+      demo: 'https://product-filter-app-git-main-prateek205s-projects.vercel.app/',
     },
     {
       id: 3,
@@ -71,13 +61,8 @@ const Projects = () => {
         'LocalStorage'
       ],
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
-      github: 'https://github.com/prateek205/frontend-projects',
-      demo: 'https://frontend-practice.vercel.app',
-      stats: {
-        lines: 1200,
-        commits: 28,
-        stars: 15
-      }
+      github: 'https://github.com/prateek205/Todo_Task_App',
+      demo: 'https://todo-task-app-git-main-prateek205s-projects.vercel.app/',
     }
   ];
 
@@ -166,32 +151,6 @@ const Projects = () => {
                     {project.technologies.map((tech, i) => (
                       <span key={i} className="tech-tag">{tech}</span>
                     ))}
-                  </div>
-                </div>
-                
-                <div className="project-stats">
-                  <div className="stat">
-                    <div className="stat-icon">📝</div>
-                    <div className="stat-content">
-                      <div className="stat-value">{project.stats.lines.toLocaleString()}</div>
-                      <div className="stat-label">Lines of Code</div>
-                    </div>
-                  </div>
-                  
-                  <div className="stat">
-                    <div className="stat-icon">🔄</div>
-                    <div className="stat-content">
-                      <div className="stat-value">{project.stats.commits}</div>
-                      <div className="stat-label">Commits</div>
-                    </div>
-                  </div>
-                  
-                  <div className="stat">
-                    <div className="stat-icon">⭐</div>
-                    <div className="stat-content">
-                      <div className="stat-value">{project.stats.stars}</div>
-                      <div className="stat-label">Stars</div>
-                    </div>
                   </div>
                 </div>
                 

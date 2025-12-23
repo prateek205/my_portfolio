@@ -35,15 +35,6 @@ const Footer = () => {
     hour12: true 
   });
 
-  const quotes = [
-    "Code is like humor. When you have to explain it, it's bad.",
-    "First, solve the problem. Then, write the code.",
-    "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-    "Programming isn't about what you know; it's about what you can figure out.",
-    "The best error message is the one that never shows up."
-  ];
-
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   return (
     <footer id="footer" className="footer">
@@ -62,12 +53,10 @@ const Footer = () => {
                   <span className="logo-tagline">MERN Stack Developer</span>
                 </div>
               </div>
-              
-              <p className="brand-quote">"{randomQuote}"</p>
-              
+                            
               <div className="brand-social">
                 <a 
-                  href="https://www.linkedin.com/in/prateek-bahad" 
+                  href="https://www.linkedin.com/in/prateek-bahad-a1b985167" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="social-link"
@@ -87,7 +76,7 @@ const Footer = () => {
                   <span className="social-tooltip">GitHub</span>
                 </a>
                 <a 
-                  href="mailto:mernstack.prateekb@gmail.com" 
+                  href="mailto:prateekbahad@gmail.com" 
                   className="social-link"
                   aria-label="Email"
                 >
@@ -95,7 +84,7 @@ const Footer = () => {
                   <span className="social-tooltip">Email</span>
                 </a>
                 <a 
-                  href="https://drive.google.com/file/d/YOUR_RESUME_ID" 
+                  href="/resume/prateek_bahad_resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="social-link"
@@ -117,17 +106,6 @@ const Footer = () => {
                   <a href="#experience" className="footer-link">Experience</a>
                   <a href="#projects" className="footer-link">Projects</a>
                   <a href="#contact" className="footer-link">Contact</a>
-                </div>
-              </div>
-              
-              <div className="link-group">
-                <h4 className="group-title">Resources</h4>
-                <div className="link-list">
-                  <a href="#resume" className="footer-link">Resume</a>
-                  <a href="#portfolio" className="footer-link">Portfolio</a>
-                  <a href="#certifications" className="footer-link">Certifications</a>
-                  <a href="#blog" className="footer-link">Blog</a>
-                  <a href="#tools" className="footer-link">Dev Tools</a>
                 </div>
               </div>
               

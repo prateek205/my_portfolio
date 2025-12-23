@@ -27,10 +27,10 @@ const Contact = () => {
       id: 2,
       type: 'email',
       label: 'Email',
-      value: 'mernstack.prateekb@gmail.com',
+      value: 'prateekbahad@gmail.com',
       icon: '✉️',
       color: '#06b6d4',
-      action: 'mailto:mernstack.prateekb@gmail.com'
+      action: 'mailto:prateekbahad@gmail.com'
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ const Contact = () => {
     {
       id: 1,
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/prateek-bahad',
+      url: 'https://www.linkedin.com/in/prateek-bahad-a1b985167',
       icon: '💼',
       color: '#0a66c2',
       username: '/prateek-bahad'
@@ -70,10 +70,10 @@ const Contact = () => {
     {
       id: 3,
       name: 'Email',
-      url: 'mailto:mernstack.prateekb@gmail.com',
+      url: 'mailto:prateekbahad@gmail.com',
       icon: '📧',
       color: '#ea4335',
-      username: 'mernstack.prateekb'
+      username: 'prateekbahad'
     },
     {
       id: 4,

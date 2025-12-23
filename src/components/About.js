@@ -53,7 +53,8 @@ const About = () => {
                 Let's Work Together
               </a>
               <a 
-                href="https://drive.google.com/file/d/YOUR_RESUME_LINK" 
+                href="/resume/prateek_bahad_resume.pdf"
+                download = "prateek_bahad_resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
