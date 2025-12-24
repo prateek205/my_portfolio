@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Portfolio Website (MERN Stack)',
+      title: 'Portfolio Website (React)',
       description: 'A full-stack personal portfolio website with contact form functionality and real-time messaging.',
       category: 'fullstack',
       status: 'completed',
@@ -22,9 +22,9 @@ const Projects = () => {
         'Real-time messages',
         'Smooth animations'
       ],
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Vercel'],
-      github: 'https://github.com/prateek205/portfolio',
-      demo: 'https://prateek-portfolio.vercel.app',
+      technologies: ['React.js', 'Vercel'],
+      github: 'https://github.com/prateek205/Portfolio',
+      demo: 'https://portfolio-prateek205s-projects.vercel.app',
     },
     {
       id: 2,
