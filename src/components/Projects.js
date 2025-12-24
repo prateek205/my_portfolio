@@ -42,8 +42,8 @@ const Projects = () => {
         'JSON server'
       ],
       technologies: ['React', 'Context API', 'JavaScript', 'CSS3', 'Vercel'],
-      github: 'https://github.com/prateek205/Product_filter-App',
-      demo: 'https://product-filter-app-git-main-prateek205s-projects.vercel.app/',
+      github: 'https://github.com/prateek205/E-Com-App',
+      demo: 'https://e-com-app-liard.vercel.app',
     },
     {
       id: 3,
