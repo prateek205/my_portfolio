@@ -36,7 +36,6 @@ const Projects = () => {
       color: '#06b6d4',
       features: [
         'Category filters',
-        'Color filters',
         'Price range',
         'Global state management',
         'JSON server'
