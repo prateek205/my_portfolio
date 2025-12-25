@@ -9,15 +9,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Portfolio Website (React)',
-      description: 'A full-stack personal portfolio website with contact form functionality and real-time messaging.',
-      category: 'fullstack',
+      title: 'Responsive Portfolio Website | React',
+      description: 'A react based personal portfolio website with contact form functionality and real-time messaging.',
+      category: 'react.js',
       status: 'completed',
       icon: '🚀',
       color: '#8b5cf6',
       features: [
-        'Full-stack development',
-        'Database storage',
+        'React',
         'Responsive design',
         'Real-time messages',
         'Smooth animations'
@@ -28,7 +27,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Product Filter App',
+      title: 'E-Com Web App | React',
       description: 'A responsive product listing application with advanced filtering options and global state management.',
       category: 'frontend',
       status: 'completed',
@@ -37,6 +36,7 @@ const Projects = () => {
       features: [
         'Category filters',
         'Price range',
+        'Rating',
         'Global state management',
         'JSON server'
       ],
