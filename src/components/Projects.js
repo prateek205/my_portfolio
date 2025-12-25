@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: 'Responsive Portfolio Website | React',
       description: 'A react based personal portfolio website with contact form functionality and real-time messaging.',
-      category: 'react.js',
+      category: 'frontend',
       status: 'completed',
       icon: '🚀',
       color: '#8b5cf6',
@@ -32,13 +32,12 @@ const Projects = () => {
       icon: '🛒',
       color: '#06b6d4',
       features: [
-        'Category filters',
+        'Category filters and Sorting',
         'Price range',
-        'Rating',
-        'Global state management',
-        'JSON server'
+        'Product Rating',
+        'Responsive UI'
       ],
-      technologies: ['React.js', 'Context API', 'JavaScript', 'CSS3', 'Vercel'],
+      technologies: ['React.js', 'Context API', 'HTML', 'JavaScript', 'CSS3', 'Vercel', 'Git', 'GitHub'],
       github: 'https://github.com/prateek205/E-Com-App',
       demo: 'https://e-com-app-liard.vercel.app',
     },
@@ -57,16 +56,17 @@ const Projects = () => {
         'Accessibility optimized',
         'LocalStorage'
       ],
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Git', 'GitHub', 'Vercel'],
       github: 'https://github.com/prateek205/Todo_Task_App',
       demo: 'https://todo-task-app-git-main-prateek205s-projects.vercel.app/',
     }
   ];
 
   const categories = [
-    { id: 'all', name: 'All Projects', count: projects.length },
+    { id: 'all', name: 'All', count: projects.length },
     { id: 'fullstack', name: 'Full Stack', count: projects.filter(p => p.category === 'fullstack').length },
-    { id: 'frontend', name: 'Frontend', count: projects.filter(p => p.category === 'frontend').length },
+    { id: 'frontend', name: 'Frontend (React)', count: projects.filter(p => p.category === 'frontend').length },
+    { id: 'vanilla javascript', name: 'Vanilla', count: projects.filter(p => p.category === 'vanilla javascript').length },
   ];
 
   const filteredProjects = activeFilter === 'all' 
