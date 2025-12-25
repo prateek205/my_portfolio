@@ -16,12 +16,10 @@ const Projects = () => {
       icon: '🚀',
       color: '#8b5cf6',
       features: [
-        'React',
         'Responsive design',
-        'Real-time messages',
         'Smooth animations'
       ],
-      technologies: ['React.js', 'Vercel'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Vercel',  'Git', 'GitHub' ],
       github: 'https://github.com/prateek205/Portfolio',
       demo: 'https://portfolio-prateek205s-projects.vercel.app',
     },
@@ -40,7 +38,7 @@ const Projects = () => {
         'Global state management',
         'JSON server'
       ],
-      technologies: ['React', 'Context API', 'JavaScript', 'CSS3', 'Vercel'],
+      technologies: ['React.js', 'Context API', 'JavaScript', 'CSS3', 'Vercel'],
       github: 'https://github.com/prateek205/E-Com-App',
       demo: 'https://e-com-app-liard.vercel.app',
     },
