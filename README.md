@@ -27,11 +27,11 @@ This portfolio website is designed to present personal projects and technical sk
 
 ## 🌟 Live Demo
 
-URL: https://portfolio-prateek205s-projects.vercel.app
+URL: https://my-portfolio-roan-seven-15.vercel.app/
 
 ## 📂 GitHub Repository
 
-URL: https://github.com/prateek205/Portfolio
+URL: https://github.com/prateek205/my_portfolio
 
 ## 📁 Project Structure
 
