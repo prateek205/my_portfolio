@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "title": "Responsive Portfolio Website | React",
+    "description": "A personal portfolio website built with React that showcases projects and includes a working contact form.",
+    "category": "frontend",
+    "status": "completed",
+    "image": "/images/portfolio-project.png",
+    "color": "#8b5cf6",
+    "features": [
+      "Built a personal portfolio that adapts well to mobile, tablet, and desktop screens",
+      "Structured the website using reusable components to keep the code organized",
+      "Added smooth animations to make the interface more engaging",
+      "Created a contact form so visitors can easily get in touch",
+      "Deployed the website online using Vercel"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Vercel",
+      "Git",
+      "GitHub"
+    ],
+    "github": "https://github.com/prateek205/Portfolio",
+    "demo": "https://portfolio-prateek205s-projects.vercel.app"
+  },
+  {
+    "id": 2,
+    "title": "E-Com Web App | React",
+    "description": "A React-based e-commerce application that displays products with filtering and sorting features.",
+    "category": "frontend",
+    "status": "completed",
+    "image": "/images/ecommerce-project.png",
+    "color": "#06b6d4",
+    "features": [
+      "Built product listing pages with category, price, and rating filters",
+      "Handled shared application data using React Context API",
+      "Used reusable components to keep the code simple and scalable",
+      "Designed the interface to work smoothly on all screen sizes",
+      "Deployed the application on Vercel for public access"
+    ],
+    "technologies": [
+      "React.js",
+      "Context API",
+      "HTML",
+      "JavaScript",
+      "CSS3",
+      "Vercel",
+      "Git",
+      "GitHub"
+    ],
+    "github": "https://github.com/prateek205/E-Com-App",
+    "demo": "https://e-com-app-liard.vercel.app"
+  },
+  {
+    "id": 3,
+    "title": "Projects Portfolio | Vanilla JavaScript",
+    "description": "A collection of HTML, CSS, and JavaScript projects including landing pages and interactive mini applications.",
+    "category": "vanilla javascript",
+    "status": "completed",
+    "image": "/images/vanilla-js-project.png",
+    "color": "#f59e0b",
+    "features": [
+      "Displayed multiple projects using data stored in a structured JSON file",
+      "Organized the layout using reusable UI sections",
+      "Allowed users to filter projects by category",
+      "Ensured all projects are responsive across different devices",
+      "Managed code versioning and deployment using GitHub and Vercel"
+    ],
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Git", "GitHub", "Vercel"],
+    "github": "https://github.com/prateek205/Project-Showcase-Portfolio",
+    "demo": "https://project-showcase-portfolio.vercel.app/"
+  }
+]
