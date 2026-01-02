@@ -12,12 +12,12 @@ const About = () => {
           <div className="about-text">
             <div className="about-highlight">
               <div className="highlight-icon">💫</div>
-              <h3>Passionate MERN Stack Developer</h3>
+              <h3>Passionate Frontend Developer</h3>
             </div>
             
             <p className="about-description">
-              I'm a passionate and dedicated <strong>MERN Stack Developer</strong> with practical 
-              experience in developing full-stack web applications using modern technologies. 
+              I'm a passionate and dedicated <strong>Frontend Developer</strong> with practical 
+              experience in developing web applications using modern technologies. 
               I specialize in creating clean, responsive user interfaces and integrating 
               <strong> RESTful APIs</strong> for seamless functionality.
             </p>
@@ -53,8 +53,8 @@ const About = () => {
                 Let's Work Together
               </a>
               <a 
-                href="/resume/prateek_bahad_resume.pdf"
-                download = "prateek_bahad_resume.pdf" 
+                href="/resume/prateek-bahad-resume.pdf"
+                download = "prateek-bahad-resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
@@ -78,7 +78,7 @@ const About = () => {
               
               <div className="profile-info">
                 <h3 className="profile-name">Prateek Bahad</h3>
-                <p className="profile-title">MERN Stack Developer</p>
+                <p className="profile-title">Frontend Developer</p>
                 
                 <div className="profile-details">
                   <div className="detail">
@@ -87,7 +87,7 @@ const About = () => {
                   </div>
                   <div className="detail">
                     <span className="detail-icon">📧</span>
-                    <span>mernstack.prateekb@gmail.com</span>
+                    <span>prateekbahad@gmail.com</span>
                   </div>
                   <div className="detail">
                     <span className="detail-icon">📱</span>
