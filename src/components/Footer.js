@@ -50,7 +50,7 @@ const Footer = () => {
                 <span className="logo-symbol">⚛️</span>
                 <div className="logo-text">
                   <span className="logo-name">Prateek Bahad</span>
-                  <span className="logo-tagline">MERN Stack Developer</span>
+                  <span className="logo-tagline">Frontend Developer</span>
                 </div>
               </div>
                             
@@ -84,7 +84,7 @@ const Footer = () => {
                   <span className="social-tooltip">Email</span>
                 </a>
                 <a 
-                  href="/resume/prateek_bahad_resume.pdf" 
+                  href="/resume/prateek-bahad-resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="social-link"
