@@ -70,7 +70,7 @@
       "Managed code versioning and deployment using GitHub and Vercel"
     ],
     "technologies": ["HTML5", "CSS3", "JavaScript", "Git", "GitHub", "Vercel"],
-    "github": "https://github.com/prateek205/Project-Showcase-Portfolio",
-    "demo": "https://project-showcase-portfolio.vercel.app/"
+    "github": "https://github.com/prateek205/Project-Portfolio-Showcase",
+    "demo": "https://project-portfolio-showcase.vercel.app/"
   }
 ]
